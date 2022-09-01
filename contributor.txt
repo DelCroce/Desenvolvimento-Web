@@ -10,3 +10,96 @@ Freeware: é o software que é gratuito apenas, ou seja, embora não se pague na
 
 Shareware: é uma modalidade de distribuição e comercialização de software, onde o software pode ser livremente copiado, mas ele funciona em um modo “demonstração” por determinado período de tempo.
 
+CRIS
+1- Unidades funcionais: processador (UCP), memória principal e dispositivos de entrada/saída
+
+2- Unidade Lógica e aritmética(somas, subtrações e funções lógicas, em um sistema digital). 
+
+Unidade de Controle(assume toda a tarefa de controle das ações a serem realizadas pelo computador, comandado todos os demais componentes de sua arquitetura).
+
+Registradores(armazenar e deslocar informações binárias, e são tipicamente usados como um dispositivo de armazenamento temporário são utilizados na execução de programas de computadores, disponibilizando um local para armazenar dados).
+
+3- A memória do computador é organizada em hierarquia. No nível mais alto (mais perto do processador) estão os registradores, a memória cache e a memória principal. A hierarquia continua com a memória externa (por exemplo, disco rígido) e o armazenamento off-line (por exemplo, fitas magnéticas).
+
+4- A UCP armazena no MAR o endereço da célula da célula a ser lida
+
+A UCP gera um sinal de controle para a que memória principal indicando que
+uma operação de leitura deve ser realizada
+
+O conteúdo da(s) célula(s), identificada(s) pelo endereço contido no MAR, é
+transferido para o MBR
+
+O conteúdo do MBR é transferido para um registrador da UCP.
+Operação de Gravação
+
+A UCP armazena no MAR o endereço que será gravada.
+
+A UCP armazena no MBR a informação, que deverá ser gravada.
+
+A UCP gera um sinal de controle para a memória principal, indicando que uma
+operação de gravação deve ser realizada.
+
+A informação contida no MBR é transferida para a célula de memória
+endereçada pelo MAR
+
+5-MAR=16 bits número máximo células= 2^16
+
+MAR=32 bits número máximo células= 2^32
+
+MAR=64 bits número máximo células= 2^64
+
+6- Memórias voláteis são as que requerem energia para manter a informação
+armazenada.
+
+Memórias não voláteis são aquelas que guardam todas as informações mesmo quando não estiverem a
+receber alimentação.
+
+7- A memória cache é uma memória volátil de alta velocidade, porém com pequena capacidade de armazenamento. O tempo de acesso a um dado nela contido é muito melhor do que se este dado estivesse na memória principal. O propósito do uso da memória cache é minimizar a disparidade existente entre a velocidade com que o processador executa instruções e a velocidade com que dados são acessados na
+memória principal.
+
+8- O princípio da localidade garante, que após a transferência de um novo bloco da memória principal para a cache haverá uma alta probabilidade de cache hits em futuras referencias, otimizando, assim, o tempo de acesso ao dado.
+
+9- O funcionamento dessa arquitetura tem como base o princípio de que quanto menor a capacidade de armazenamento da memória cache, mais rápido é o acesso ao dado; contudo, a probabilidade da ocorrência de cache hits é menor. Essa hierarquização de memória cache em múltiplos níveis é a solução para aumentar o desempenho no funcionamento das memórias caches.
+
+10- Enquanto a memória principal precisa estar sempre energizada para manter suas informações, a memória secundária não precisa de alimentação. A memória cache é uma memória volátil. A memória secundária é um meio permanente, isto é, não-volátil de armazenamento de programas e dados.
+
+11- Os dispositivos utilizados como memória secundária (discos e fitas) caracterizam-se por ter capacidade de armazenamento bastante superior ao da memória principal. Seu custo é relativamente baixo, porém o tempo de acesso à memória secundária é bem superior ao da memória principal. Seu custo é relativamente baixo, porem o tempo de acesso à memória secundária é bem superior ao da memória principal. Outros dispositivos tem como finalidade a comunicação usuário-máquina, como teclado, monitores de vídeo impressora e plotters.
+
+12- Os barramentos processador-memória são de curta extensão e alta velocidade para que seja otimizado a transferência de informação entre processadores e memórias. Os barramentos de E/S possuem maior extensão, são mais lento e possuem a conexão de diferentes dispositivos. O barramento de backplane tem a função de integrar os dois barramentos anteriores.
+
+13-
+
+14-
+Na arquitetura RISC:
+Há poucas instruções
+Instruções executadas pelo hardware
+Instruções com formato fixo
+Instruções utilizam poucos ciclos de
+maquina
+Instruções com poucos modos de
+endereçamento
+Arquitetura com muitos registradores
+Arquitetura pipelining
+
+Na arquitetura CISC:
+Muitas instruções
+Instruções executadas por
+microcódigos
+Instruções com diversos formatos
+Instruções utilizam múltiplos ciclos
+Instruções com diversos modos de
+endereçamento
+Arquitetura com poucos registradores
+Pouco uso da técnica de pipelining.
+
+15- A técnica conhecida como benchmark permite a análise de desempenho comparativa entre sistemas computacionais. Neste método, um conjunto de programas é executado em cada sistema avaliado e o tempo de execução comparado.
+
+16- Isso ocorre em função de um programa poder chamar sub-rotinas externas, e, neste caso, o tradutor não tem como associar o programa principal às sub-rotinas chamadas.
+
+17- Como não existe a geração de um código executável, as instruções de um programa devem ser traduzidas toda vez que for executado.
+
+18- Suas funções básicas são resolver todas as referências simbólicas existente entre os módulos de um programa e reservar memória para a sua execução.
+
+19- Carregar na memória principal um programa para ser executado.
+
+20-  Inicialmente, todo o código do sistema operacional reside memória secundaria como discos e fitas. Toda vez que um computador é ligado, o sistema operacional tem que ser carregado da memória secundaria para a memória principal. Esse procedimento é realizado por um programa localizado em um bloco especifico do disco (boot block).
